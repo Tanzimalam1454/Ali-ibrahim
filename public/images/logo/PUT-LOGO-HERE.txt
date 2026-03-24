@@ -1,0 +1,15 @@
+📍 ADD YOUR COMPANY LOGO HERE
+
+Save your logo file as:
+logo.png
+
+Requirements:
+- PNG format with transparent background
+- Minimum 500px width (1000px recommended)
+- Your logo colors: Navy blue + Coral red
+
+Your logo will appear:
+✓ Header navigation (top left)
+✓ Footer (bottom, white version)
+
+Just drop logo.png in this folder and refresh the website!

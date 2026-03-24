@@ -1,0 +1,24 @@
+📍 ADD CLIENT LOGOS HERE
+
+Save client logos with these names:
+- saudi-aramco.png
+- sabic.png
+- maaden.png
+- sec.png
+- (etc.)
+
+Requirements:
+- PNG format with transparent background
+- 200-300px width
+- Lowercase names with hyphens
+
+After adding logos:
+1. Open index.html
+2. Find the "Clients" section (around line 300)
+3. Replace placeholders with:
+
+<div class="client-logo-wrapper">
+    <img src="public/images/clients/company-name.png" alt="Company Name" class="client-logo">
+</div>
+
+Drop your client logo PNG files in this folder!
