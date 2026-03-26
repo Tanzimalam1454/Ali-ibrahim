@@ -153,9 +153,11 @@
                     <div class="capability-card animate-on-scroll" data-animation="fade-left" data-delay="150">
                         <div class="capability-icon-wrapper">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="capability-icon">
-                                <rect x="8" y="20" width="32" height="20" stroke="currentColor" stroke-width="3"/>
-                                <path d="M12 20V12L24 8L36 12V20" stroke="currentColor" stroke-width="3"/>
-                                <rect x="18" y="26" width="12" height="14" fill="currentColor"/>
+                                <!-- Workers/Team Icon -->
+                                <circle cx="18" cy="14" r="5" stroke="currentColor" stroke-width="3"/>
+                                <circle cx="30" cy="14" r="5" stroke="currentColor" stroke-width="3"/>
+                                <path d="M8 38V34C8 29.5817 11.5817 26 16 26H20C22.2091 26 24 27.7909 24 30V38" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M24 38V30C24 27.7909 25.7909 26 28 26H32C36.4183 26 40 29.5817 40 34V38" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <h3 class="capability-title">Industrial Scale</h3>
@@ -165,8 +167,9 @@
                     <div class="capability-card animate-on-scroll" data-animation="fade-left" data-delay="250">
                         <div class="capability-icon-wrapper">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="capability-icon">
-                                <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="3"/>
-                                <path d="M24 12V24L30 27" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                                <!-- Shield Check Icon -->
+                                <path d="M24 6L10 12V22C10 30 14 36 24 42C34 36 38 30 38 22V12L24 6Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M18 24L22 28L30 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                         <h3 class="capability-title">Proven Track Record</h3>
@@ -176,9 +179,9 @@
                     <div class="capability-card animate-on-scroll" data-animation="fade-left" data-delay="350">
                         <div class="capability-icon-wrapper">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="capability-icon">
-                                <path d="M24 8L8 16L24 24L40 16L24 8Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
-                                <path d="M8 24L24 32L40 24" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
-                                <path d="M8 32L24 40L40 32" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <!-- Wrench & Hammer Tools Icon -->
+                                <path d="M12 36L20 28L16 24L8 32C6 34 6 37 8 39C10 41 13 41 15 39L12 36Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M32 12L28 16M20 24L24 28M28 16L24 20L28 24L32 20L36 24L40 20L36 16L32 12L28 16Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
                         <h3 class="capability-title">Complete Solutions</h3>
@@ -188,9 +191,12 @@
                     <div class="capability-card animate-on-scroll" data-animation="fade-left" data-delay="450">
                         <div class="capability-icon-wrapper">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" class="capability-icon">
-                                <rect x="10" y="18" width="12" height="20" stroke="currentColor" stroke-width="3"/>
-                                <rect x="26" y="10" width="12" height="28" stroke="currentColor" stroke-width="3"/>
-                                <path d="M6 38H42" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                                <!-- Simple Truck Icon -->
+                                <rect x="6" y="24" width="22" height="12" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <path d="M28 24H36L42 30V36H38" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                                <circle cx="16" cy="36" r="3" stroke="currentColor" stroke-width="3"/>
+                                <circle cx="34" cy="36" r="3" stroke="currentColor" stroke-width="3"/>
+                                <path d="M19 36H31M6 36H13" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <h3 class="capability-title">Fleet & Logistics</h3>
@@ -437,146 +443,166 @@
         </div>
     </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients" role="region" aria-labelledby="clients-heading">
-        <div class="section-container">
-            <div class="section-header-centered">
+    <!-- Clients Section - Redesigned -->
+    <section id="clients" class="clients-redesigned" role="region" aria-labelledby="clients-heading">
+        <div class="clients-redesigned-container">
+            <div class="clients-redesigned-header animate-on-scroll" data-animation="fade-up">
                 <span class="section-label">Trusted Partners</span>
                 <h2 id="clients-heading" class="section-title">Industry-Leading Clients</h2>
                 <p class="section-description">Proud to serve leading organizations across Saudi Arabia's construction and industrial sectors</p>
             </div>
 
-            <div class="clients-marquee">
-                <div class="clients-track">
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/13.png" alt="Client partner logo" class="client-logo">
+            <div class="clients-ticker">
+                <div class="clients-ticker-track">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/13.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/14.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/14.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/15.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/15.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/16.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/16.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/17.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/17.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/18.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/18.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/19.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/19.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
 
                     <!-- Duplicate for seamless loop -->
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/13.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/13.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/14.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/14.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/15.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/15.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/16.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/16.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/17.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/17.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/18.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/18.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
-                    <div class="client-logo-wrapper">
-                        <img src="public/clients/19.png" alt="Client partner logo" class="client-logo">
+                    <div class="client-ticker-item">
+                        <img src="public/clients/19.png" alt="Client partner logo" class="client-ticker-logo">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section - Redesigned -->
-    <section id="contact" class="contact-redesigned" role="region" aria-labelledby="contact-heading">
-        <div class="contact-redesigned-container">
+    <!-- Contact Section - Redesigned V3 -->
+    <section id="contact" class="contact-v3" role="region" aria-labelledby="contact-heading">
+        <div class="contact-v3-container">
             <!-- Header -->
-            <div class="contact-redesigned-header animate-on-scroll" data-animation="fade-up">
+            <div class="contact-v3-header animate-on-scroll" data-animation="fade-up">
                 <span class="section-label">Get in Touch</span>
-                <h2 id="contact-heading" class="section-title">Let's Build Together</h2>
-                <p class="contact-redesigned-subtitle">Connect with our team to discuss your construction, manpower, or logistics requirements.</p>
+                <h2 id="contact-heading" class="contact-v3-title">
+                    Let's Discuss Your
+                    <span class="contact-v3-title-accent">Next Project</span>
+                </h2>
+                <p class="contact-v3-subtitle">Connect with our team of 800+ professionals ready to deliver excellence across the Kingdom</p>
             </div>
 
-            <!-- Contact Cards Grid -->
-            <div class="contact-cards-grid">
-                <!-- Location Card -->
-                <div class="contact-card animate-on-scroll" data-animation="fade-up" data-delay="100">
-                    <div class="contact-card-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M28 13.333C28 22.666 16 30.666 16 30.666C16 30.666 4 22.666 4 13.333C4 6.70533 9.372 1.33333 16 1.33333C22.628 1.33333 28 6.70533 28 13.333Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="16" cy="13.333" r="4" stroke="currentColor" stroke-width="2.5"/>
-                        </svg>
+            <!-- Main Contact Grid -->
+            <div class="contact-v3-grid">
+                <!-- Contact Information Cards -->
+                <div class="contact-v3-info">
+                    <div class="contact-info-card animate-on-scroll" data-animation="fade-right" data-delay="100">
+                        <div class="info-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M28 13.3333C28 22.6667 16 30.6667 16 30.6667C16 30.6667 4 22.6667 4 13.3333C4 6.70533 9.372 1.33333 16 1.33333C22.628 1.33333 28 6.70533 28 13.3333Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="16" cy="13.3333" r="4" stroke="currentColor" stroke-width="2.5"/>
+                            </svg>
+                        </div>
+                        <div class="info-card-content">
+                            <h3 class="info-card-label">Our Location</h3>
+                            <p class="info-card-text">Rakha St. Cross 6 / 7<br>Al-Khobar South<br>Kingdom of Saudi Arabia</p>
+                            <p class="info-card-meta">P.O. Box 435, Al-Khobar 31952</p>
+                        </div>
                     </div>
-                    <h3 class="contact-card-title">Visit Us</h3>
-                    <p class="contact-card-detail">Rakha St. Cross 6 / 7<br>Al-Khobar South<br>Kingdom of Saudi Arabia</p>
-                    <p class="contact-card-meta">P.O. Box 435, Al-Khobar 31952</p>
+
+                    <div class="contact-info-card animate-on-scroll" data-animation="fade-right" data-delay="200">
+                        <div class="info-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M29.3333 22.56V26.56C29.3373 26.9527 29.2589 27.3418 29.1033 27.7023C28.9476 28.0628 28.7182 28.3867 28.4304 28.6531C28.1426 28.9195 27.8029 29.1226 27.4328 29.2491C27.0627 29.3755 26.6704 29.4226 26.28 29.3867C22.1571 28.9288 18.2026 27.5527 14.6933 25.3733C11.4435 23.3943 8.6239 20.7081 6.46665 17.52C4.27987 14.0013 2.90253 9.93496 2.45332 5.70666C2.41753 5.31856 2.46415 4.92848 2.58963 4.56014C2.71511 4.1918 2.91667 3.85339 3.18118 3.56632C3.44569 3.27924 3.76734 3.04991 4.12539 2.89338C4.48345 2.73686 4.87017 2.65659 5.25998 2.65866H9.25998C9.9357 2.65188 10.5902 2.89189 11.0991 3.33588C11.6079 3.77986 11.9357 4.39681 12.02 5.06666C12.1763 6.40562 12.4856 7.72272 12.9413 8.99333C13.1272 9.50577 13.1589 10.0626 13.0323 10.5933C12.9057 11.124 12.6266 11.6058 12.2267 11.9787L10.5067 13.6987C12.3574 17.0753 15.1101 19.7947 18.5267 21.6253L20.2467 19.9053C20.6232 19.5103 21.1093 19.2343 21.6448 19.1089C22.1803 18.9835 22.7421 19.0147 23.26 19.1987C24.5427 19.6509 25.8722 19.958 27.2233 20.1133C27.9016 20.198 28.5252 20.5309 28.9712 21.0473C29.4172 21.5638 29.6542 22.2274 29.6333 22.9067V22.56Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="info-card-content">
+                            <h3 class="info-card-label">Phone Number</h3>
+                            <a href="tel:+96638890162" class="info-card-link">013 8890162</a>
+                            <p class="info-card-meta">Available during business hours</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card animate-on-scroll" data-animation="fade-right" data-delay="300">
+                        <div class="info-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 10L16 18L28 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="info-card-content">
+                            <h3 class="info-card-label">Email Address</h3>
+                            <a href="mailto:nazir0717@yahoo.com" class="info-card-link">nazir0717@yahoo.com</a>
+                            <p class="info-card-meta">We'll respond within 24 hours</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Phone Card -->
-                <div class="contact-card animate-on-scroll" data-animation="fade-up" data-delay="200">
-                    <div class="contact-card-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M29.333 22.56V26.56C29.333 27.409 28.6947 28.0933 27.8467 28.1467H24C10.7451 28.1467 0 17.4016 0 4.14667V2.66667C0 1.78133 0.596191 1.13333 1.33333 1.13333H5.33333L8 9.33333L5.33333 12C7.33333 16.6667 12.6667 22 17.3333 24L20 21.3333L28 24L29.333 22.56Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3 class="contact-card-title">Call Us</h3>
-                    <p class="contact-card-detail">013 8890162</p>
-                    <a href="tel:+96638890162" class="contact-card-link">
-                        Make a Call
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                </div>
+                <!-- CTA Section -->
+                <div class="contact-v3-cta animate-on-scroll" data-animation="fade-left" data-delay="200">
+                    <div class="contact-cta-card">
+                        <div class="cta-card-badge">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 10L9 11.5L12.5 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Established 2005 • C.R. 2051025312</span>
+                        </div>
 
-                <!-- Email Card -->
-                <div class="contact-card animate-on-scroll" data-animation="fade-up" data-delay="300">
-                    <div class="contact-card-icon">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <rect x="4" y="6.66667" width="24" height="18.6667" rx="2.66667" stroke="currentColor" stroke-width="2.5"/>
-                            <path d="M4 9.33333L16 17.3333L28 9.33333" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <h3 class="contact-card-title">Email Us</h3>
-                    <p class="contact-card-detail">nazir0717@yahoo.com</p>
-                    <a href="mailto:nazir0717@yahoo.com" class="contact-card-link">
-                        Send Email
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+                        <h3 class="cta-card-title">Ready to Start Your Project?</h3>
+                        <p class="cta-card-description">From large-scale construction to specialized manpower deployment, our team is ready to bring your vision to life with precision and expertise.</p>
 
-            <!-- CTA Banner -->
-            <div class="contact-cta-banner animate-on-scroll" data-animation="fade-up" data-delay="400">
-                <div class="contact-cta-content">
-                    <div class="contact-cta-text">
-                        <h3 class="contact-cta-title">Ready to Start Your Project?</h3>
-                        <p class="contact-cta-description">Our team of 800+ professionals is ready to deliver excellence for your next development.</p>
-                    </div>
-                    <div class="contact-cta-actions">
-                        <a href="mailto:nazir0717@yahoo.com" class="btn-cta-primary">
-                            <span>Get Started</span>
+                        <div class="cta-card-features">
+                            <div class="cta-feature">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>800+ Skilled Professionals</span>
+                            </div>
+                            <div class="cta-feature">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>20+ Years of Excellence</span>
+                            </div>
+                            <div class="cta-feature">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Kingdom-Wide Service</span>
+                            </div>
+                        </div>
+
+                        <a href="mailto:nazir0717@yahoo.com" class="cta-card-button">
+                            <span>Get Started Today</span>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        <div class="contact-cta-meta">
-                            <span class="contact-cta-badge">C.R. 2051025312</span>
-                            <span class="contact-cta-divider">•</span>
-                            <span class="contact-cta-badge">Est. 2005</span>
-                        </div>
                     </div>
                 </div>
             </div>

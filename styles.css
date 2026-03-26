@@ -1564,6 +1564,143 @@ h4 { font-size: 1.25rem; }
     animation-play-state: paused;
 }
 
+/* === CLIENTS SECTION - REDESIGNED === */
+.clients-redesigned {
+    background: linear-gradient(135deg, #F8FAFB 0%, #FFFFFF 40%, #F8FAFB 100%);
+    padding: 8rem 0;
+    position: relative;
+}
+
+.clients-redesigned-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.clients-redesigned-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+}
+
+/* Ticker Animation */
+.clients-ticker {
+    overflow: hidden;
+    position: relative;
+    padding: 3rem 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.clients-ticker-track {
+    display: flex;
+    gap: 4rem;
+    animation: ticker-scroll 40s linear infinite;
+    width: fit-content;
+}
+
+.clients-ticker:hover .clients-ticker-track {
+    animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.client-ticker-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+    height: 180px;
+    background: white;
+    border: 2px solid var(--color-border);
+    border-radius: 1.25rem;
+    padding: 2rem;
+    transition: all 0.4s ease;
+}
+
+.client-ticker-item:hover {
+    transform: scale(1.05);
+    border-color: var(--color-accent);
+    box-shadow: 0 10px 30px rgba(199, 53, 41, 0.15);
+}
+
+.client-ticker-logo {
+    max-width: 300px;
+    max-height: 140px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(65%);
+    transition: all 0.4s ease;
+}
+
+.client-ticker-item:hover .client-ticker-logo {
+    filter: grayscale(0%) opacity(100%);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .clients-redesigned {
+        padding: 6rem 0;
+    }
+
+    .clients-ticker-track {
+        gap: 3rem;
+    }
+
+    .client-ticker-item {
+        min-width: 300px;
+        height: 160px;
+    }
+
+    .client-ticker-logo {
+        max-width: 250px;
+        max-height: 120px;
+    }
+}
+
+@media (max-width: 640px) {
+    .clients-redesigned {
+        padding: 5rem 0;
+    }
+
+    .clients-redesigned-header {
+        margin-bottom: 3rem;
+    }
+
+    .clients-ticker {
+        padding: 2rem 0;
+    }
+
+    .clients-ticker-track {
+        gap: 2rem;
+    }
+
+    .client-ticker-item {
+        min-width: 250px;
+        height: 140px;
+        padding: 1.5rem;
+    }
+
+    .client-ticker-logo {
+        max-width: 200px;
+        max-height: 100px;
+    }
+}
+
+/* Hide old clients section */
+.clients {
+    display: none;
+}
+
 /* === CONTACT SECTION === */
 .contact {
     background: linear-gradient(135deg, #0A0F1C 0%, #141B2E 100%);
@@ -1728,314 +1865,385 @@ h4 { font-size: 1.25rem; }
     }
 }
 
-/* === CONTACT SECTION - REDESIGNED === */
-.contact-redesigned {
+/* === CONTACT SECTION V3 - CLEAN & CONSISTENT === */
+.contact-v3 {
     background: linear-gradient(135deg, #F8FAFB 0%, #FFFFFF 40%, #F8FAFB 100%);
     padding: 8rem 0;
     position: relative;
-    overflow: hidden;
 }
 
-.contact-redesigned-container {
+.contact-v3-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 /* Header */
-.contact-redesigned-header {
+.contact-v3-header {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 5rem;
 }
 
-.contact-redesigned-subtitle {
+.contact-v3-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.contact-v3-title-accent {
+    background: linear-gradient(135deg, var(--color-accent) 0%, #FF6B4A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+}
+
+.contact-v3-subtitle {
     font-size: 1.125rem;
     line-height: 1.8;
     color: var(--color-text-light);
-    margin-top: 1rem;
 }
 
-/* Contact Cards Grid */
-.contact-cards-grid {
+/* Main Grid */
+.contact-v3-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 4rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
-.contact-card {
+/* Contact Info Cards */
+.contact-v3-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info-card {
+    display: flex;
+    gap: 2rem;
     background: white;
     border: 2px solid var(--color-border);
-    border-radius: 1.5rem;
-    padding: 3rem 2.5rem;
-    text-align: center;
+    border-radius: 1.25rem;
+    padding: 2.5rem;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
 }
 
-.contact-card::before {
+.contact-info-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
-    transform: scaleX(0);
-    transform-origin: left;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--color-accent), var(--color-primary));
+    transform: scaleY(0);
+    transform-origin: top;
     transition: transform 0.4s ease;
 }
 
-.contact-card:hover {
+.contact-info-card:hover {
     transform: translateY(-8px);
     border-color: var(--color-accent);
     box-shadow: 0 20px 40px rgba(199, 53, 41, 0.15);
 }
 
-.contact-card:hover::before {
-    transform: scaleX(1);
+.contact-info-card:hover::before {
+    transform: scaleY(1);
 }
 
-.contact-card-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 2rem;
+.info-card-icon {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(199, 53, 41, 0.1), rgba(44, 62, 95, 0.05));
-    border: 2px solid rgba(199, 53, 41, 0.2);
-    border-radius: 1.5rem;
-    color: var(--color-accent);
+    background: linear-gradient(135deg, rgba(199, 53, 41, 0.1), rgba(44, 62, 95, 0.08));
+    border-radius: 1rem;
     transition: all 0.4s ease;
 }
 
-.contact-card:hover .contact-card-icon {
+.info-card-icon svg {
+    stroke: var(--color-accent);
+    transition: all 0.4s ease;
+}
+
+.contact-info-card:hover .info-card-icon {
     background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
-    border-color: var(--color-accent);
-    color: white;
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1) rotate(-5deg);
 }
 
-.contact-card-icon svg {
-    stroke: currentColor;
+.contact-info-card:hover .info-card-icon svg {
+    stroke: white;
 }
 
-.contact-card-title {
+.info-card-content {
+    flex: 1;
+}
+
+.info-card-label {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 0.875rem;
     font-weight: 700;
-    color: var(--color-primary);
-    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
 }
 
-.contact-card-detail {
+.info-card-text {
     font-size: 1.0625rem;
     line-height: 1.7;
     color: var(--color-text);
-    margin-bottom: 0.75rem;
     font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
-.contact-card-meta {
+.info-card-link {
+    font-family: var(--font-heading);
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.info-card-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.info-card-link:hover {
+    color: var(--color-accent);
+}
+
+.info-card-link:hover::after {
+    width: 100%;
+}
+
+.info-card-meta {
     font-size: 0.9375rem;
     color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
 }
 
-.contact-card-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: var(--font-heading);
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: var(--color-accent);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 1rem;
+/* CTA Card */
+.contact-v3-cta {
+    position: sticky;
+    top: 120px;
 }
 
-.contact-card-link svg {
-    stroke: currentColor;
-    transition: transform 0.3s ease;
-}
-
-.contact-card-link:hover {
-    color: var(--color-primary);
-    gap: 0.75rem;
-}
-
-.contact-card-link:hover svg {
-    transform: translateX(4px);
-}
-
-/* CTA Banner */
-.contact-cta-banner {
+.contact-cta-card {
     background: linear-gradient(135deg, var(--color-primary) 0%, #1a2640 100%);
-    border-radius: 2rem;
-    padding: 4rem;
+    border-radius: 1.5rem;
+    padding: 3.5rem;
+    box-shadow: 0 20px 60px rgba(44, 62, 95, 0.2);
     position: relative;
     overflow: hidden;
 }
 
-.contact-cta-banner::before {
+.contact-cta-card::before {
     content: '';
     position: absolute;
     top: -50%;
-    right: -10%;
+    right: -20%;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(199, 53, 41, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(199, 53, 41, 0.15), transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
 
-.contact-cta-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-    position: relative;
-    z-index: 1;
-}
-
-.contact-cta-text {
-    flex: 1;
-}
-
-.contact-cta-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: white;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.contact-cta-description {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.contact-cta-actions {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1.5rem;
-}
-
-.btn-cta-primary {
+.cta-card-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 1.25rem 2.5rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2rem;
+    font-family: var(--font-heading);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.cta-card-badge svg {
+    stroke: var(--color-accent);
+}
+
+.cta-card-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.cta-card-description {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2.5rem;
+}
+
+.cta-card-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-heading);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: white;
+}
+
+.cta-feature svg {
+    flex-shrink: 0;
+    stroke: var(--color-accent);
+}
+
+.cta-card-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1.25rem 2rem;
     background: var(--color-accent);
     color: white;
     font-family: var(--font-heading);
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     font-weight: 700;
     text-decoration: none;
     border-radius: 0.75rem;
     transition: all 0.3s ease;
     box-shadow: 0 8px 24px rgba(199, 53, 41, 0.4);
-    border: 2px solid transparent;
 }
 
-.btn-cta-primary:hover {
+.cta-card-button:hover {
     background: white;
     color: var(--color-accent);
-    border-color: white;
     transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(199, 53, 41, 0.5);
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
 }
 
-.btn-cta-primary svg {
+.cta-card-button svg {
     stroke: currentColor;
+    transition: transform 0.3s ease;
 }
 
-.contact-cta-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.contact-cta-badge {
-    font-family: var(--font-heading);
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.contact-cta-divider {
-    color: rgba(255, 255, 255, 0.3);
+.cta-card-button:hover svg {
+    transform: translateX(4px);
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .contact-redesigned {
+    .contact-v3 {
         padding: 6rem 0;
     }
 
-    .contact-cards-grid {
+    .contact-v3-title {
+        font-size: 2.75rem;
+    }
+
+    .contact-v3-header {
+        margin-bottom: 4rem;
+    }
+
+    .contact-v3-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 3rem;
     }
 
-    .contact-cta-banner {
-        padding: 3rem 2rem;
+    .contact-v3-cta {
+        position: static;
     }
 
-    .contact-cta-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-cta-title {
-        font-size: 2rem;
-    }
-
-    .contact-cta-actions {
-        align-items: center;
-        width: 100%;
-    }
-
-    .btn-cta-primary {
-        width: 100%;
-        justify-content: center;
+    .cta-card-title {
+        font-size: 2.25rem;
     }
 }
 
-@media (max-width: 640px) {
-    .contact-redesigned {
+@media (max-width: 768px) {
+    .contact-v3 {
         padding: 5rem 0;
     }
 
-    .contact-redesigned-header {
+    .contact-v3-header {
         margin-bottom: 3rem;
     }
 
-    .contact-card {
+    .contact-v3-title {
+        font-size: 2.25rem;
+    }
+
+    .contact-v3-subtitle {
+        font-size: 1rem;
+    }
+
+    .contact-info-card {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .info-card-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .contact-cta-card {
         padding: 2.5rem 2rem;
     }
 
-    .contact-cta-banner {
-        padding: 2.5rem 1.5rem;
+    .cta-card-title {
+        font-size: 2rem;
     }
 
-    .contact-cta-title {
-        font-size: 1.75rem;
-    }
-
-    .contact-cta-description {
+    .cta-card-description {
         font-size: 1rem;
     }
 }
 
-/* Hide old contact section */
-.contact {
+@media (max-width: 480px) {
+    .contact-v3-title {
+        font-size: 2rem;
+    }
+
+    .cta-card-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* Hide old contact sections */
+.contact,
+.contact-redesigned,
+.contact-bold {
     display: none;
 }
 
