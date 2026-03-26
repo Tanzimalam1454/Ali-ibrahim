@@ -29,6 +29,7 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#capabilities">Capabilities</a></li>
                 <li><a href="#clients">Clients</a></li>
@@ -496,83 +497,87 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact" role="region" aria-labelledby="contact-heading">
-        <div class="contact-container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <span class="section-label">Get in Touch</span>
-                    <h2 id="contact-heading" class="section-title">Let's Build Together</h2>
-                    <p class="contact-intro">Connect with our team to discuss your construction, manpower, or logistics requirements. We're ready to deliver excellence for your next project.</p>
+    <!-- Contact Section - Redesigned -->
+    <section id="contact" class="contact-redesigned" role="region" aria-labelledby="contact-heading">
+        <div class="contact-redesigned-container">
+            <!-- Header -->
+            <div class="contact-redesigned-header animate-on-scroll" data-animation="fade-up">
+                <span class="section-label">Get in Touch</span>
+                <h2 id="contact-heading" class="section-title">Let's Build Together</h2>
+                <p class="contact-redesigned-subtitle">Connect with our team to discuss your construction, manpower, or logistics requirements.</p>
+            </div>
 
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z" stroke="currentColor" stroke-width="2"/>
-                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <div class="contact-label">Headquarters</div>
-                                <div class="contact-value">Rakha St. Cross 6 / 7, Al-Khobar South<br>Kingdom of Saudi Arabia</div>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M22 16.92V19.92C22 20.4728 21.5523 20.92 21 20.92H18C8.05887 20.92 0 12.8611 0 2.92V2C0 1.44772 0.447715 1 1 1H4L6 7L4 9C5.5 12.5 9.5 16.5 13 18L15 16L21 18L22 16.92Z" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <div class="contact-label">Telephone</div>
-                                <div class="contact-value">013 8890162</div>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M3 7L12 13L21 7" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <div class="contact-label">Email</div>
-                                <div class="contact-value">nazir0717@yahoo.com</div>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
-                                    <path d="M8 3V21M16 3V21M3 8H21M3 16H21" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <div class="contact-label">Mailing Address</div>
-                                <div class="contact-value">P.O. Box 435, Al-Khobar 31952</div>
-                            </div>
-                        </div>
+            <!-- Contact Cards Grid -->
+            <div class="contact-cards-grid">
+                <!-- Location Card -->
+                <div class="contact-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M28 13.333C28 22.666 16 30.666 16 30.666C16 30.666 4 22.666 4 13.333C4 6.70533 9.372 1.33333 16 1.33333C22.628 1.33333 28 6.70533 28 13.333Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="16" cy="13.333" r="4" stroke="currentColor" stroke-width="2.5"/>
+                        </svg>
                     </div>
-
-                    <div class="contact-registration">
-                        <span class="registration-label">Commercial Registration:</span>
-                        <span class="registration-number">2051025312</span>
-                    </div>
+                    <h3 class="contact-card-title">Visit Us</h3>
+                    <p class="contact-card-detail">Rakha St. Cross 6 / 7<br>Al-Khobar South<br>Kingdom of Saudi Arabia</p>
+                    <p class="contact-card-meta">P.O. Box 435, Al-Khobar 31952</p>
                 </div>
 
-                <div class="contact-cta-card">
-                    <h3 class="cta-card-title">Ready to Start Your Project?</h3>
-                    <p class="cta-card-text">Our team is standing by to discuss your construction needs and provide tailored solutions for your next development.</p>
-                    <a href="mailto:nazir0717@yahoo.com" class="btn-primary btn-large">
-                        Contact Us Today
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="btn-icon">
-                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Phone Card -->
+                <div class="contact-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M29.333 22.56V26.56C29.333 27.409 28.6947 28.0933 27.8467 28.1467H24C10.7451 28.1467 0 17.4016 0 4.14667V2.66667C0 1.78133 0.596191 1.13333 1.33333 1.13333H5.33333L8 9.33333L5.33333 12C7.33333 16.6667 12.6667 22 17.3333 24L20 21.3333L28 24L29.333 22.56Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-card-title">Call Us</h3>
+                    <p class="contact-card-detail">013 8890162</p>
+                    <a href="tel:+96638890162" class="contact-card-link">
+                        Make a Call
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-card animate-on-scroll" data-animation="fade-up" data-delay="300">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="6.66667" width="24" height="18.6667" rx="2.66667" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M4 9.33333L16 17.3333L28 9.33333" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-card-title">Email Us</h3>
+                    <p class="contact-card-detail">nazir0717@yahoo.com</p>
+                    <a href="mailto:nazir0717@yahoo.com" class="contact-card-link">
+                        Send Email
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CTA Banner -->
+            <div class="contact-cta-banner animate-on-scroll" data-animation="fade-up" data-delay="400">
+                <div class="contact-cta-content">
+                    <div class="contact-cta-text">
+                        <h3 class="contact-cta-title">Ready to Start Your Project?</h3>
+                        <p class="contact-cta-description">Our team of 800+ professionals is ready to deliver excellence for your next development.</p>
+                    </div>
+                    <div class="contact-cta-actions">
+                        <a href="mailto:nazir0717@yahoo.com" class="btn-cta-primary">
+                            <span>Get Started</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <div class="contact-cta-meta">
+                            <span class="contact-cta-badge">C.R. 2051025312</span>
+                            <span class="contact-cta-divider">•</span>
+                            <span class="contact-cta-badge">Est. 2005</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

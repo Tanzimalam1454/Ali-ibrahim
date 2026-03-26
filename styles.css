@@ -1728,6 +1728,317 @@ h4 { font-size: 1.25rem; }
     }
 }
 
+/* === CONTACT SECTION - REDESIGNED === */
+.contact-redesigned {
+    background: linear-gradient(135deg, #F8FAFB 0%, #FFFFFF 40%, #F8FAFB 100%);
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-redesigned-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+.contact-redesigned-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+}
+
+.contact-redesigned-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+    margin-top: 1rem;
+}
+
+/* Contact Cards Grid */
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact-card {
+    background: white;
+    border: 2px solid var(--color-border);
+    border-radius: 1.5rem;
+    padding: 3rem 2.5rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-accent);
+    box-shadow: 0 20px 40px rgba(199, 53, 41, 0.15);
+}
+
+.contact-card:hover::before {
+    transform: scaleX(1);
+}
+
+.contact-card-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(199, 53, 41, 0.1), rgba(44, 62, 95, 0.05));
+    border: 2px solid rgba(199, 53, 41, 0.2);
+    border-radius: 1.5rem;
+    color: var(--color-accent);
+    transition: all 0.4s ease;
+}
+
+.contact-card:hover .contact-card-icon {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+    border-color: var(--color-accent);
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+}
+
+.contact-card-icon svg {
+    stroke: currentColor;
+}
+
+.contact-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.contact-card-detail {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.contact-card-meta {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.contact-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.contact-card-link svg {
+    stroke: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.contact-card-link:hover {
+    color: var(--color-primary);
+    gap: 0.75rem;
+}
+
+.contact-card-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* CTA Banner */
+.contact-cta-banner {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #1a2640 100%);
+    border-radius: 2rem;
+    padding: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-cta-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(199, 53, 41, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.contact-cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-cta-text {
+    flex: 1;
+}
+
+.contact-cta-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.contact-cta-description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-cta-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.btn-cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 2.5rem;
+    background: var(--color-accent);
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(199, 53, 41, 0.4);
+    border: 2px solid transparent;
+}
+
+.btn-cta-primary:hover {
+    background: white;
+    color: var(--color-accent);
+    border-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(199, 53, 41, 0.5);
+}
+
+.btn-cta-primary svg {
+    stroke: currentColor;
+}
+
+.contact-cta-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contact-cta-badge {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-cta-divider {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .contact-redesigned {
+        padding: 6rem 0;
+    }
+
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-cta-banner {
+        padding: 3rem 2rem;
+    }
+
+    .contact-cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-cta-title {
+        font-size: 2rem;
+    }
+
+    .contact-cta-actions {
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn-cta-primary {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-redesigned {
+        padding: 5rem 0;
+    }
+
+    .contact-redesigned-header {
+        margin-bottom: 3rem;
+    }
+
+    .contact-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .contact-cta-banner {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .contact-cta-title {
+        font-size: 1.75rem;
+    }
+
+    .contact-cta-description {
+        font-size: 1rem;
+    }
+}
+
+/* Hide old contact section */
+.contact {
+    display: none;
+}
+
 /* === FOOTER - REDESIGNED === */
 .footer-new {
     background: var(--color-primary);
